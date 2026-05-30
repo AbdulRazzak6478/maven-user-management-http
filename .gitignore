@@ -1,0 +1,52 @@
+# Maven
+target/
+
+# Environment files
+.env
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java compiled files
+*.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Build files
+dependency-reduced-pom.xml
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# IntelliJ
+out/
+
+# VS Code Java
+bin/
+
+# Coverage reports
+coverage/
+
+.mvn/
+mvnw
+mvnw.cmd
