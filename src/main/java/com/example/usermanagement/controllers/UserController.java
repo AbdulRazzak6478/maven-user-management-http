@@ -35,7 +35,7 @@ public class UserController implements HttpHandler {
                 this.getAllUsers(exchange);
             } else if (method.equals("GET") && path.equals("/users/user")) {
                 String queries = exchange.getRequestURI().getQuery();
-                Map<String, String> queryParams = new ConcurrentHashMap();
+                Map<String, String> queryParams = new ConcurrentHashMap<>();
                 System.out.println("before Query");
                 if (queries != null) {
                     System.out.println("inside query : " + queries);
@@ -61,7 +61,7 @@ public class UserController implements HttpHandler {
                 System.out.println("outside query");
             } else if (method.equals("DELETE") && path.equals("/users")) {
                 String queries = exchange.getRequestURI().getQuery();
-                Map<String, String> queryParams = new ConcurrentHashMap();
+                Map<String, String> queryParams = new ConcurrentHashMap<>();
                 System.out.println("before Query");
                 if (queries != null) {
                     System.out.println("inside query : " + queries);
