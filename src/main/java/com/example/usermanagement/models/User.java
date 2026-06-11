@@ -3,8 +3,20 @@ package com.example.usermanagement.models;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "users")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idx;
     private String id;
     private String firstName;
     private String lastName;
@@ -18,6 +30,8 @@ public class User {
     private int salary;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    public User(){}
 
     public String getId() {
         return this.id;
